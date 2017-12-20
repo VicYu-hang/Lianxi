@@ -54,7 +54,7 @@ public class ShowYeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         if (position==0) {
                 ViewHolder viewHolder = (ViewHolder) holder;
                 List<String> bannerList = new ArrayList<>();
-                List<ShouYeBean.RetBean.ListBean> listBeen = shouYeBean.getRet().getList();
+                final List<ShouYeBean.RetBean.ListBean> listBeen = shouYeBean.getRet().getList();
             for (int i = 0; i < shouYeBean.getRet().getList().size(); i++) {
                 try {
                     bannerList.add(listBeen.get(i).getChildList().get(position).getPic());
